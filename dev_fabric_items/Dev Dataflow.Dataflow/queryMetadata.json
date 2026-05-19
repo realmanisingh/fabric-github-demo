@@ -4,6 +4,63 @@
   "name": "Dev Dataflow",
   "queryGroups": [],
   "documentLocale": "en-US",
-  "queriesMetadata": {},
-  "connections": []
+  "queriesMetadata": {
+    "dimcustomer": {
+      "queryId": "d77723f7-1fe2-4e88-a2ff-43e7166f98b1",
+      "queryName": "dimcustomer"
+    },
+    "dimgeography": {
+      "queryId": "3f55cdc2-5966-42af-b8ef-0f7b414d3373",
+      "queryName": "dimgeography"
+    },
+    "factresellersales": {
+      "queryId": "076820c1-8b13-40ac-bd6f-6e0231f37672",
+      "queryName": "factresellersales"
+    },
+    "dimgeography_DataDestination": {
+      "queryId": "bb052e22-1505-43c3-b75f-7a439772a1c6",
+      "queryName": "dimgeography_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "factresellersales_DataDestination": {
+      "queryId": "2cce1fa6-0029-4e8c-994c-7fb4951bfbb8",
+      "queryName": "factresellersales_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "dimcustomer_DataDestination": {
+      "queryId": "7d2e9a37-4b92-42f6-a381-aa2439e192a4",
+      "queryName": "dimcustomer_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "WorkspaceId": {
+      "queryId": "526a6106-8da3-4040-aa87-2986ac4de4c2",
+      "queryName": "WorkspaceId",
+      "loadEnabled": false
+    },
+    "LakehouseId": {
+      "queryId": "f7a2faeb-df01-4817-bdcf-5367d9462c14",
+      "queryName": "LakehouseId",
+      "loadEnabled": false
+    },
+    "WarehouseId": {
+      "queryId": "b16aa623-6976-46a0-8177-18df31348af7",
+      "queryName": "WarehouseId",
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"1d3e03a5-87f4-4269-b365-81704470f6ae\",\"DatasourceId\":\"7101bb7b-da29-410e-a688-1ef40625b622\"}"
+    },
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"1d3e03a5-87f4-4269-b365-81704470f6ae\",\"DatasourceId\":\"ff9307cf-50c4-4047-a482-7b1a77f3d033\"}"
+    }
+  ]
 }
