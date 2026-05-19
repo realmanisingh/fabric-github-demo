@@ -1,0 +1,76 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "InvokePipeline",
+        "typeProperties": {
+          "parameters": {},
+          "waitOnCompletion": true,
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "pipelineId": "99277c71-7ec1-b36d-4f89-60a979552527",
+          "operationType": "InvokeFabricPipeline"
+        },
+        "externalReferences": {
+          "connection": "9da2b118-886e-447e-a188-49f63eda87d3"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "ingest_from_source",
+        "dependsOn": []
+      },
+      {
+        "type": "RefreshDataflow",
+        "typeProperties": {
+          "dataflowId": "97246461-d6fa-baa1-4746-5f8c150b5f8e",
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "notifyOption": "NoNotification",
+          "dataflowType": "DataflowFabric"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "write_to_silver",
+        "dependsOn": [
+          {
+            "activity": "ingest_from_source",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "7179c109-451c-88fc-44d4-fe74b7ffb4d1",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "transform_data",
+        "dependsOn": [
+          {
+            "activity": "write_to_silver",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
