@@ -4,11 +4,19 @@
   "variableOverrides": [
     {
       "name": "git_workspace_id",
-      "value": "6c613297-3792-491e-b3eb-4f2c6f13cd77"
+      "value": "13f10688-7797-4c03-88ed-477906154e1d"
     },
     {
       "name": "git_lh_name",
       "value": "git_lh"
+    },
+    {
+      "name": "git_wh_id",
+      "value": "e4dd412b-3139-4994-81a4-bb10c8fb8c49"
+    },
+    {
+      "name": "git_lh_id",
+      "value": "69a60f0c-a335-4a2e-a454-08a00285c20a"
     }
   ]
 }
