@@ -17,6 +17,18 @@
     {
       "name": "git_lh_id",
       "value": "69a60f0c-a335-4a2e-a454-08a00285c20a"
+    },
+    {
+      "name": "git_dataflow_id",
+      "value": "24c52067-e777-4ac8-aff9-f67e9c0c9ea3"
+    },
+    {
+      "name": "git_notebook_id",
+      "value": "23ecd429-8748-4187-8746-ef247d0406df"
+    },
+    {
+      "name": "git_ingestion_pipeline_id",
+      "value": "164844ff-e784-44fe-bd9a-7bdcd55fdd95"
     }
   ]
 }
