@@ -36,6 +36,24 @@
       "note": "",
       "type": "String",
       "value": "git_lh"
+    },
+    {
+      "name": "git_dataflow_id",
+      "note": "",
+      "type": "String",
+      "value": "150b5f8e-5f8c-4746-baa1-d6fa97246461"
+    },
+    {
+      "name": "git_notebook_id",
+      "note": "",
+      "type": "String",
+      "value": "b7ffb4d1-fe74-44d4-88fc-451c7179c109"
+    },
+    {
+      "name": "git_ingestion_pipeline_id",
+      "note": "",
+      "type": "String",
+      "value": "79552527-60a9-4f89-b36d-7ec199277c71"
     }
   ]
 }
