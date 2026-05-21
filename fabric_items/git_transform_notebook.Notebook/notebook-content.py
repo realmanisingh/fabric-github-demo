@@ -26,6 +26,31 @@
 
 # MARKDOWN ********************
 
+# #### Configure default lakehouse using variable library
+
+# CELL ********************
+
+# MAGIC %%configure
+# MAGIC {
+# MAGIC   "defaultLakehouse": {
+# MAGIC     "name": {
+# MAGIC       "variableName": "$(/**/env_variables/git_lh_name)" 
+# MAGIC     },
+# MAGIC     "id": {
+# MAGIC       "variableName": "$(/**/env_variables/git_lh_id)"
+# MAGIC     }
+# MAGIC   }
+# MAGIC }
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# MARKDOWN ********************
+
 # #### Import libraries
 
 # CELL ********************
