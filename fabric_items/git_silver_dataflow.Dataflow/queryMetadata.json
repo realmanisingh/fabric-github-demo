@@ -1,0 +1,66 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "Dev Dataflow",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "dimcustomer": {
+      "queryId": "d77723f7-1fe2-4e88-a2ff-43e7166f98b1",
+      "queryName": "dimcustomer"
+    },
+    "dimgeography": {
+      "queryId": "3f55cdc2-5966-42af-b8ef-0f7b414d3373",
+      "queryName": "dimgeography"
+    },
+    "factresellersales": {
+      "queryId": "076820c1-8b13-40ac-bd6f-6e0231f37672",
+      "queryName": "factresellersales"
+    },
+    "WorkspaceId": {
+      "queryId": "526a6106-8da3-4040-aa87-2986ac4de4c2",
+      "queryName": "WorkspaceId",
+      "loadEnabled": false
+    },
+    "LakehouseId": {
+      "queryId": "f7a2faeb-df01-4817-bdcf-5367d9462c14",
+      "queryName": "LakehouseId",
+      "loadEnabled": false
+    },
+    "WarehouseId": {
+      "queryId": "b16aa623-6976-46a0-8177-18df31348af7",
+      "queryName": "WarehouseId",
+      "loadEnabled": false
+    },
+    "dimcustomer_DataDestination": {
+      "queryId": "29b22e1d-a0c4-459b-a18b-272e948ce2d7",
+      "queryName": "dimcustomer_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "dimgeography_DataDestination": {
+      "queryId": "30a4fd33-3dfa-484b-af58-f2712fd755ca",
+      "queryName": "dimgeography_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "factresellersales_DataDestination": {
+      "queryId": "6f5bbdc4-81d2-487b-bf6c-6dd493942b24",
+      "queryName": "factresellersales_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"e67be71e-20b2-4522-ba0d-d6f123d5179f\",\"DatasourceId\":\"fdf29224-6c3c-4d51-bb0c-30936e6239a3\"}"
+    },
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"e67be71e-20b2-4522-ba0d-d6f123d5179f\",\"DatasourceId\":\"7bbf4066-5830-4aa5-a175-fcbd7e838465\"}"
+    }
+  ]
+}

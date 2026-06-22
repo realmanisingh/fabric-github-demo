@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/variables/1.0.0/schema.json",
+  "variables": [
+    {
+      "name": "git_lh_id",
+      "note": "",
+      "type": "String",
+      "value": "5c89b4b8-042f-4156-a4e1-5b69da8e22d4"
+    },
+    {
+      "name": "git_wh_id",
+      "note": "",
+      "type": "String",
+      "value": "9083272e-99db-48b3-871b-96e41721ead2"
+    },
+    {
+      "name": "git_workspace_id",
+      "note": "",
+      "type": "String",
+      "value": "a8bd3c3f-1eb2-45db-b973-4b73be576c05"
+    },
+    {
+      "name": "source_workspace_id",
+      "note": "",
+      "type": "String",
+      "value": "32f91f51-6728-4716-96af-81736a33e79f"
+    },
+    {
+      "name": "source_lh_id",
+      "note": "",
+      "type": "String",
+      "value": "3a9c0a74-b915-40d0-bb37-e8b2f40b2926"
+    },
+    {
+      "name": "git_lh_name",
+      "note": "",
+      "type": "String",
+      "value": "git_lh"
+    },
+    {
+      "name": "git_dataflow_id",
+      "note": "",
+      "type": "String",
+      "value": "c9ab5170-9bfa-4d7b-8013-e4a8a5dc9a7a"
+    },
+    {
+      "name": "git_notebook_id",
+      "note": "",
+      "type": "String",
+      "value": "03dddd99-c233-49d7-9e06-945c6a86c5a9"
+    },
+    {
+      "name": "git_ingestion_pipeline_id",
+      "note": "",
+      "type": "String",
+      "value": "2e60a748-8cc5-4ae1-9993-005f166e00ec"
+    }
+  ]
+}
