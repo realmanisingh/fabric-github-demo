@@ -1,14 +1,16 @@
 CREATE TABLE [dbo].[dimgeography] (
-
-	[GeographyKey] int NULL, 
-	[City] varchar(8000) NULL, 
-	[StateProvinceCode] varchar(8000) NULL, 
-	[StateProvinceName] varchar(8000) NULL, 
-	[CountryRegionCode] varchar(8000) NULL, 
-	[EnglishCountryRegionName] varchar(8000) NULL, 
-	[SpanishCountryRegionName] varchar(8000) NULL, 
-	[FrenchCountryRegionName] varchar(8000) NULL, 
-	[PostalCode] varchar(8000) NULL, 
-	[SalesTerritoryKey] int NULL, 
-	[IpAddressLocator] varchar(8000) NULL
+    [GeographyKey]             INT            NULL,
+    [City]                     VARCHAR (8000) NULL,
+    [StateProvinceCode]        VARCHAR (8000) NULL,
+    [StateProvinceName]        VARCHAR (8000) NULL,
+    [CountryRegionCode]        VARCHAR (8000) NULL,
+    [EnglishCountryRegionName] VARCHAR (8000) NULL,
+    [SpanishCountryRegionName] VARCHAR (8000) NULL,
+    [FrenchCountryRegionName]  VARCHAR (8000) NULL,
+    [PostalCode]               VARCHAR (8000) NULL,
+    [SalesTerritoryKey]        INT            NULL,
+    [IpAddressLocator]         VARCHAR (8000) NULL
 );
+
+
+GO

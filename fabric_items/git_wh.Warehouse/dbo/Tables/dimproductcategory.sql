@@ -1,8 +1,10 @@
 CREATE TABLE [dbo].[dimproductcategory] (
-
-	[ProductCategoryKey] int NULL, 
-	[ProductCategoryAlternateKey] int NULL, 
-	[EnglishProductCategoryName] varchar(8000) NULL, 
-	[SpanishProductCategoryName] varchar(8000) NULL, 
-	[FrenchProductCategoryName] varchar(8000) NULL
+    [ProductCategoryKey]          INT            NULL,
+    [ProductCategoryAlternateKey] INT            NULL,
+    [EnglishProductCategoryName]  VARCHAR (8000) NULL,
+    [SpanishProductCategoryName]  VARCHAR (8000) NULL,
+    [FrenchProductCategoryName]   VARCHAR (8000) NULL
 );
+
+
+GO
