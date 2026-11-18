@@ -161,6 +161,7 @@ else:
 
 # CELL ********************
 
+print('hello world')
 
 # METADATA ********************
 
